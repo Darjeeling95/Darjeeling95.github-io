@@ -6,12 +6,12 @@
   <meta name="author" content="Dong Yuanxin">
   
   
-  <title>归档 | Hexo</title>
+  <title>调整Ubuntu字体 | Hexo</title>
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   
-    <meta name="keywords" content="Hexo, Theme-AD">
+    <meta name="keywords" content="Linux,">
   
 
   
@@ -42,7 +42,7 @@
     welcome: {"enable":false,"interval":30},
     start_time: "2018-02-10",
     passwords: ["efe07af7441da2b69c4a41e42e73be4db47f66010a56900788a458354a7373ec", ],
-    is_post: false,
+    is_post: true,
     lock: false,
     author: "Dong Yuanxin",
     share: {"twitter":true,"facebook":true,"weibo":true,"qq":true,"wechat":true},
@@ -160,73 +160,77 @@
 </nav>
 <div id="site-process"></div>
     <main>
-      <div class="timeline">
-  <h2 class="timeline-title">归档: 13篇</h2>
+      
+  <div class="passage">
+  <div class="passage-meta">
+    <span>
+      <i class="fa fa-calendar"></i>2019-01-15
+    </span>
+    
+    
+      <span>
+        | <i class="fa fa-unlock-alt"></i>UNLOCK
+      </span>
+    
+  </div>
+  <h1 class="passage-title">
+    调整Ubuntu字体
+  </h1>
   
+  <article class="passage-article">
+    <p>1安装字体：<br>以微软雅黑字体为例（其他的宋体、黑体等点阵字体都一样的），我们的雅黑字体文件是：msyh.ttf(常规字体)和msyhbd.ttf(微软雅黑加粗字体)，该字体可在widows目录的Fonts目录下找到，如果没有，也可以从网上下载。由于我是双系统，我直接从Win7中复制了<strong> msyh.ttf和 msyhbd.ttf （都在C:\Windows\Fonts</strong>下面，搜索即得）到Ubuntu里桌面上的文件夹font下（~/Desktop/font）。</p>
+<p>2在/usr/share/fonts/下新建文件夹 如：winFonts目录，准备把从windows下拷贝过来的字体都放在这个目录里，这里就是把雅黑字体msyh.ttf和msyhbd.ttf放进来：</p>
+<p>3sudo mkdir -p /usr/share/fonts/winFonts<br>然后将字体文件拷贝到此文件夹下：</p>
+<p>4sudo cp ~/Desktop/font/*.ttf /usr/share/fonts/winFonts/<br>然后，改变权限：</p>
+<p>5sudo chmod 644 /usr/share/fonts/winFonts/*.ttf(改成755也没问题的，但起码要444,修改雅黑字体文件的权限为644，即当前用户读写，当前组用户只读，其他用户只读）</p>
+<p>6安装 Unity Tweak Tool （软件中心）</p>
+<p>7字体里面 monospace 选择</p>
+<p>8终端里面选择 Default 字体</p>
+
+  </article>
+  <aside class="table-content" id="site-toc">
+  <div class="table-content-title">
+    <i class="fa fa-arrow-right fa-lg" id="site-toc-hide-btn"></i>
+    <span>目录</span>
+  </div>
+  <div class="table-content-main">
     
-      <h3 class="timeline-subtitle">2019</h3>
-    
-    <div class="timeline-item">
-      <time>2019-04-08</time>
-      <a target="_self" href="/2019/04/08/写给idy/">所爱隔山海</a>
-    </div>
+  </div>
+</aside>
   
-    
-    <div class="timeline-item">
-      <time>2019-04-07</time>
-      <a target="_self" href="/2019/04/07/test-1/">test</a>
-    </div>
+    <aside class="passage-copyright">
+      <div>本文作者: Zeke</div>
+      
+        <div>
+          原文链接: 
+          <a href target="_blank">http://yoursite.com/2019/01/15/调整Ubuntu字体/</a>
+        </div>
+      
+      <div>
+        
+      </div>
+    </aside>
   
-    
-    <div class="timeline-item">
-      <time>2019-04-07</time>
-      <a target="_self" href="/2019/04/07/test/">test</a>
-    </div>
   
+    <div class="passage-tags">
+     
+      <a href="/tags/Linux/"><i class="fa fa-tags"></i>Linux</a>
     
-    <div class="timeline-item">
-      <time>2019-04-06</time>
-      <a target="_self" href="/2019/04/06/hello-world/">Hello World</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-03-06</time>
-      <a target="_self" href="/2019/03/06/My-new-blog/">My new blog</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-01-16</time>
-      <a target="_self" href="/2019/01/16/网页中加入音乐/">网页中加入音乐</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-01-15</time>
-      <a target="_self" href="/2019/01/15/调整Ubuntu字体/">调整Ubuntu字体</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-01-13</time>
-      <a target="_self" href="/2019/01/13/switchyOmega调成PAC方法/">switchyOmega调成PAC方法</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-01-12</time>
-      <a target="_self" href="/2019/01/12/vim中文件操作/">vim中文件操作</a>
-    </div>
-  
-    
-    <div class="timeline-item">
-      <time>2019-01-08</time>
-      <a target="_self" href="/2019/01/08/Ubuntu调整夜间模式/">Ubuntu调整夜间模式</a>
     </div>
   
 </div>
+
     </main>
+    
+      
+<div class="site-comment-contanier" data-plateform="leancloud">
+  
+    <p id="site-comment-info">
+      <i class="fa fa-spinner fa-spin"></i> 评论加载中
+    </p>
+    <div id="site-comment"></div>
+  
+</div>
     
     <div class="site-footer-wrapper">
   <footer class="site-footer">
@@ -315,19 +319,19 @@
 
 <div class="bottom-bar">
   <div class="bottom-bar-left">
-    <a href="javascript:void(0);" data-enable="false">
+    <a href="/2019/01/16/网页中加入音乐/" data-enable="true">
       <i class="fa fa-arrow-left"></i>
     </a>
-    <a href="/archives/page/2/" data-enable="true">
+    <a href="/2019/01/13/switchyOmega调成PAC方法/" data-enable="true">
       <i class="fa fa-arrow-right"></i>
     </a>
   </div>
   <div class="bottom-bar-right">
-    <a href="javascript:void(0);" data-enable="false" id="site-toc-show-btn">
+    <a href="javascript:void(0);" data-enable="true" id="site-toc-show-btn">
       <i class="fa fa-bars"></i>
     </a>
     
-      <a href="javascript:void(0);" data-enable="false">
+      <a href="#site-comment" data-enable="true">
         <i class="fa fa-commenting"></i>
       </a>
     
