@@ -14,7 +14,7 @@
       return; 
     }
 
-    password = prompt('输入你的生日 MM-DD (例如: 1995.11.26 => 1126)');
+    password = prompt('请输入密码');
     password = sha256(password || '');
 
     if(passwords.includes(password)) {
