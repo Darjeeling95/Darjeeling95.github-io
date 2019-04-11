@@ -14,7 +14,7 @@
       return; 
     }
 
-    password = prompt('请输入密码');
+    password = prompt('输入您的名称小写全拼 (例如: 李三 => lisan)');
     password = sha256(password || '');
 
     if(passwords.includes(password)) {
