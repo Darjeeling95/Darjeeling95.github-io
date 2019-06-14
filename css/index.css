@@ -660,7 +660,7 @@ main {
     margin-bottom: 40px; }
     @media screen and (max-width: 768px) {
       .passage-cover {
-        display: none; } }
+        display: block; } }
     .passage-cover figure {
       position: absolute;
       left: 0px;
